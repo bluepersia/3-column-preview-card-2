@@ -1,0 +1,32 @@
+:root 
+{
+    --cmp-c-SedansBG: hsl(31, 77%, 52%);
+    --cmp-c-SUVsBG: hsl(184, 100%, 22%);
+    --cmp-c-LuxuryBG: hsl(179, 100%, 13%);
+
+    --cmp-c-body: hsla(0, 0%, 100%, 0.75);
+    --cmp-c-headingsBGbuttons: hsl(0, 0%, 95%);
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--cmp-c-headingsBGbuttons);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+* :last-child {
+    margin-bottom: 0;
+}
