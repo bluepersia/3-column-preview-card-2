@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 5.8em 6.4%;
 }
 
 * {
@@ -54,4 +55,70 @@ html {
 .cmp h1, .cmp__btn 
 {
     color: var(--cmp-c-headingsBGbuttons);
+}
+
+
+
+/* LAYOUT */
+
+
+
+.cmp__section {
+    padding: 3.2em;
+}
+
+.cmp__section--sedans 
+{
+    background-color: var(--cmp-c-SedansBG);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cmp__section--suvs {
+    background-color: var(--cmp-c-SUVsBG);
+}
+
+.cmp__section--luxury {
+    background-color: var(--cmp-c-LuxuryBG);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cmp__btn 
+{
+    border:none;
+    padding: .8em 2.13em;
+    border-radius: 25px;
+}
+
+.cmp__section--sedans .cmp__btn {
+    color: var(--cmp-c-SedansBG);
+}
+
+.cmp__section--suvs .cmp__btn {
+    color: var(--cmp-c-SUVsBG);
+}
+.cmp__section--luxury .cmp__btn {
+    color: var(--cmp-c-LuxuryBG);
+}
+
+
+@media(min-width:768px)
+{
+    .cmp {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .cmp__section--sedans {
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .cmp__section--luxury {
+        border-radius: 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
 }
